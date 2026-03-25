@@ -7,6 +7,7 @@ contract MintableNFT is ERC721 {
     uint256 private _nextTokenId;
 
     uint256 public constant MAX_SUPPLY = 10000;
+    uint256 public constant VERSION = 1;
 
     constructor() ERC721("MintableNFT", "MNFT") {}
 
