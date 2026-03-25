@@ -6,6 +6,8 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract MintableNFT is ERC721 {
     uint256 private _nextTokenId;
 
+    uint256 public constant MAX_SUPPLY = 10000;
+
     constructor() ERC721("MintableNFT", "MNFT") {}
 
     function mint() external returns (uint256) {
